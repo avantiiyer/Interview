@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Created by esriava on 7/23/2016.
+ * Created by esriava on 7/24/2016.
  */
-public class permMissingElement {
+public class missingInteger {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int A[]=new int[5];
-        for (int i=0;i<5;i++){
+        int A[]=new int[1];
+        for (int i=0;i<1;i++){
             A[i]= scan.nextInt();
         }
         int a=solution(A);
@@ -20,16 +20,16 @@ public class permMissingElement {
         int temp=0;
         Arrays.sort(A);
         if(A.length>1) {
-            for (int i = 1; i < A.length - 1; i++) {
+            for (int i = 0; i < A.length - 1; i++) {
                 if (A[i] == A[i + 1] - 1) {
                     // System.out.println("No missing Elements");
                 } else {
                     temp = A[i + 1] - 1;
-                    System.out.println(temp);
+                    //System.out.println(temp);
                 }
             }
         }
-       // System.out.println(Arrays.toString(A));
+        // System.out.println(Arrays.toString(A));
         return temp;
     }
 }
